@@ -1,0 +1,28 @@
+#board {
+  border: 12px solid red;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cell:empty {
+  background-color: #fff;
+}
+
+.cell:has-text("X") {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.cell:has-text("O") {
+  background-color: #6bb2ff;
+  color: #fff;
+}

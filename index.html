@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2 class="text-center">Juego del michi</h2>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="d-none" id="game-finished">
+          <h3 class="text-green">
+            Juego terminado
+          </h3>
+          <h4>Ganó la '<span id="winner"></span>'</h4>
+          <button id="reset-button">Reset</button>
+        </div>
+        <!-- Tablero del michi -->
+        <table class="table table-striped-columns" id="board">
+          <tbody>
+            <tr>
+              <td class="cell" id="cell-1"></td>
+              <td class="cell" id="cell-2"></td>
+              <td class="cell" id="cell-3"></td>
+            </tr>
+            <tr>
+              <td class="cell" id="cell-4"></td>
+              <td class="cell" id="cell-5"></td>
+              <td class="cell" id="cell-6"></td>
+            </tr>
+            <tr>
+              <td class="cell" id="cell-7"></td>
+              <td class="cell" id="cell-8"></td>
+              <td class="cell" id="cell-8"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="michi.js"></script>
+</body>
+</html>
